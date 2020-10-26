@@ -5,6 +5,7 @@ import logo from "../../assets/logo.png";
 import leftArrow from "../../assets/arrow-left.png";
 import rightArrow from "../../assets/arrow-right.png";
 import wordpress from "../../assets/wordpress.png";
+import image8 from "../../assets/8.png";
 import Carousel from "../Carousel";
 
 export default function MainPage() {
@@ -53,6 +54,11 @@ export default function MainPage() {
       heading: "Ultra Mega Super Long  Heading",
       para:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet",
+    },
+    {
+      image: image8,
+      heading: "Heading",
+      para: "Lorem ipsum dolor sit amet.",
     },
   ]);
   const [start, setStart] = React.useState(0);
@@ -139,7 +145,7 @@ export default function MainPage() {
           </div>
           <div className="carousel-parent">
             <div style={{ marginRight: 30, width: "20px" }}></div>
-            <Carousel slider={slider.slice(0, count)} />
+            <Carousel slider={slider.slice(0, count)}   logo8={image8} />
             <div style={{ marginLeft: 30, width: "20px" }}></div>
           </div>
         </div>

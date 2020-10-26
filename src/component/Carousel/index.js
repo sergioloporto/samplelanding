@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Carousel(props) {
-    
+    const {logo8} = props;
     return(
         <>
         {
@@ -15,7 +15,7 @@ export default function Carousel(props) {
                             </p>
                             {
                                 text.image &&
-                                <img src={text.image} alt='Wordpress' width={30} height={30} />
+                                <img src={logo8 ? logo8 : text.image} alt='cmslogo' width={30} height={30} />
                             }
                         </div>
                     </div>
