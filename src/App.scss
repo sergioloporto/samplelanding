@@ -1,0 +1,131 @@
+.App-header{
+  width: 100%;
+   img {
+    width: 168px;
+  }
+}
+
+@media (min-width: 350px) {
+  .carousel-container{
+    height: auto;
+    width: 230px;
+    .carouset-heading {
+      font-size:16px;
+    }
+  }
+  .App-header{
+    width: 96%;
+  }
+}
+
+@media (min-width: 600px) {
+  .inner-section-first{
+    width: 100%;
+  }
+  .App-header{
+    width: 93%;
+  }
+}
+@media (orientation: landscape) {
+  .carousel-container {
+    background-color: lightblue;
+  }
+}
+@media  (min-width: 1300px) {
+  .inner-section-first{
+    width: 69%;
+  }
+  .App-header{
+    width: 59%;
+  }
+}
+.App-header {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.section-first{
+  background: #1B5299;
+  padding: 40px;
+  position: relative;
+}
+.section-second{
+  background: #E3E3E3;
+  padding: 40px;
+}
+.inner-section-first{
+  text-align: center;
+  margin: auto;
+}
+.h1-inner-section{
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: normal;
+}
+.h1-inner-section1{
+  color: #000;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: normal;
+}
+.para-inner-section{
+  opacity: .6;
+  color: #fff;
+  text-align: center;
+}
+.para-inner-section1{
+  opacity: .6;
+  color: #000;
+  text-align: center;
+}
+.carousel-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-container{
+  background: #fff;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  width: 230px;
+  padding: 20px;
+  margin: 8px;
+}
+.carouset-heading{
+  margin: 0;
+  font-weight: normal;
+}
+.carousel-para{
+  opacity: .6;
+  font-size: 12px;
+}
+.red-circle{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -10px;
+  right: 50%;
+}
+
+
+.container{
+  background-color: #fff;
+}
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; min-width: 200px; }
+.MultiCarousel{ Height: 189px;}
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; display: flex;  }
+        .MultiCarousel .MultiCarousel-inner .item { float: left; min-width: 200px; background: #fff; margin: 10px}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
